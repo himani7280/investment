@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --container-max-w: 1360px;
+  --section-py: 2.5rem; /* 40px mobile */
+}
+
+@media (min-width: 640px) {
+  :root {
+    --section-py: 3rem; /* 48px tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --section-py: 3.75rem; /* 60px desktop */
+  }
+}
+
+/* Equal vertical spacing for all sections (Upar & Neeche) */
+.section-padding {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+/* Equal horizontal container for all sections (Left & Right) */
+.section-container {
+  width: 100%;
+  max-width: var(--container-max-w);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
