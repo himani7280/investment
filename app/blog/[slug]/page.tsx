@@ -53,7 +53,7 @@ export default async function BlogDetailPage({
       <Hero
         page="BlogDetail"
         title={blog.title}
-        image="/banner.png"
+        image="/banner.jpg"
       />
       <BlogContent data={blog} />
     </div>

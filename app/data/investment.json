@@ -171,91 +171,91 @@
         "variants": {
           "InvestmentHomeHero1": {
             "title": "Home",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentAboutHero1": {
             "title": "About Us",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentContactHero1": {
             "title": "Contact Us",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentBlogHero1": {
             "title": "Blogs",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentServicesHero1": {
             "title": "Our Services",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentProcessHero1": {
             "title": "Investment Process",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentBlogDetailHero1": {
             "title": "Blog Detail",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentServiceDetailHero1": {
             "title": "Service Detail",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentMissionVisionHero1": {
             "title": "Mission & Vision",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentWhyChooseUsHero1": {
             "title": "Why Choose Us",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentOurTeamHero1": {
             "title": "Our Team",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentTeamDetailsHero1": {
             "title": "Team Detail",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentPartnersHero1": {
             "title": "Our Partners",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentTestimonialsHero1": {
             "title": "Testimonials",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentFaqHero1": {
             "title": "FAQ",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentAwardsHero1": {
             "title": "Awards & Achievements",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentPrivacyHero1": {
             "title": "Privacy & Policy",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentSitemapHero1": {
             "title": "Sitemap",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentDisclaimerHero1": {
             "title": "Disclaimer",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentTermsHero1": {
             "title": "Terms & Conditions",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentThankYouHero1": {
             "title": "Thank You",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           },
           "InvestmentConsultationHero1": {
             "title": "Book Consultation",
-            "image": "/banner.png"
+            "image": "/banner.jpg"
           }
         }
       },
@@ -1389,7 +1389,7 @@
                 "readTime": "5 Min Read",
                 "image": "/blog1.png",
                 "imageAlt": "5 Smart Investment Strategies for Long-Term Wealth",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Investing is one of the most effective ways to build wealth and secure your financial future. However, with so many options available, it can be challenging to know where to start. In this article, we explore practical investment strategies that can help you make informed decisions and stay on track toward your goals.",
                   "From mastering asset allocation to letting compound interest work over decades, adopting a disciplined mindset is the foundation of durable financial success."
@@ -1498,7 +1498,7 @@
                 "readTime": "6 Min Read",
                 "image": "/blog2.png",
                 "imageAlt": "How to Plan Your Finances in a Changing Economy",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Economic cycles are inherently unpredictable. From shifting interest rates and fluctuating inflation to unexpected geopolitical developments, economic changes test the resilience of personal finances.",
                   "Building an agile financial plan ensures you survive periods of market contraction while aggressively capitalizing on emerging growth opportunities."
@@ -1602,7 +1602,7 @@
                 "readTime": "4 Min Read",
                 "image": "/blog3.png",
                 "imageAlt": "Key Benefits of Working with a Financial Advisor",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Managing substantial wealth and complex financial commitments requires specialized expertise, continuous market surveillance, and emotional discipline. While DIY investing is popular, partnering with a professional fiduciary advisor provides quantifiable advantages.",
                   "From behavioral coaching during market panic to strategic tax location and estate coordination, an experienced advisor adds tangible alpha to your net worth."
@@ -1701,7 +1701,7 @@
                 "readTime": "5 Min Read",
                 "image": "/blog4.png",
                 "imageAlt": "Mastering Risk and Return in Volatile Markets",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Market volatility is not a defect of financial systems; it is the price of admission for superior long-term capital appreciation. However, without a structured risk management methodology, volatility can trigger panic and permanent capital impairment.",
                   "Understanding how to calculate and manage portfolio risk allows sophisticated investors to thrive during turbulent market conditions."
@@ -1801,7 +1801,7 @@
                 "readTime": "6 Min Read",
                 "image": "/blog5.png",
                 "imageAlt": "Proactive Tax Strategies to Maximize Investment Returns",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "It is not what your portfolio earns that determines your future wealth; it is what you retain after taxes. Tax friction is one of the single biggest compound drags on long-term investment performance.",
                   "Proactive, year-round tax planning ensures you utilize every statutory advantage to keep more of your returns compounding in your accounts."
@@ -1901,7 +1901,7 @@
                 "readTime": "5 Min Read",
                 "image": "/blog.png",
                 "imageAlt": "Building a Bulletproof Retirement Income Plan",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Transitioning from accumulating wealth during your working years to decumulating during retirement is the most vulnerable phase of financial life.",
                   "Without a structured withdrawal strategy, sequence-of-returns risk and inflation can permanently deplete your nest egg prematurely. Here is how to build a retirement income stream that lasts a lifetime."
@@ -2000,7 +2000,7 @@
                 "readTime": "5 Min Read",
                 "image": "/blog1.png",
                 "imageAlt": "5 Smart Investment Strategies for Long-Term Wealth",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Investing is one of the most effective ways to build wealth and secure your financial future. However, with so many options available, it can be challenging to know where to start. In this article, we explore practical investment strategies that can help you make informed decisions and stay on track toward your goals.",
                   "From mastering asset allocation to letting compound interest work over decades, adopting a disciplined mindset is the foundation of durable financial success."
@@ -2109,7 +2109,7 @@
                 "readTime": "6 Min Read",
                 "image": "/blog2.png",
                 "imageAlt": "How to Plan Your Finances in a Changing Economy",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Economic cycles are inherently unpredictable. From shifting interest rates and fluctuating inflation to unexpected geopolitical developments, economic changes test the resilience of personal finances.",
                   "Building an agile financial plan ensures you survive periods of market contraction while aggressively capitalizing on emerging growth opportunities."
@@ -2213,7 +2213,7 @@
                 "readTime": "4 Min Read",
                 "image": "/blog3.png",
                 "imageAlt": "Key Benefits of Working with a Financial Advisor",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Managing substantial wealth and complex financial commitments requires specialized expertise, continuous market surveillance, and emotional discipline. While DIY investing is popular, partnering with a professional fiduciary advisor provides quantifiable advantages.",
                   "From behavioral coaching during market panic to strategic tax location and estate coordination, an experienced advisor adds tangible alpha to your net worth."
@@ -2312,7 +2312,7 @@
                 "readTime": "5 Min Read",
                 "image": "/blog4.png",
                 "imageAlt": "Mastering Risk and Return in Volatile Markets",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Market volatility is not a defect of financial systems; it is the price of admission for superior long-term capital appreciation. However, without a structured risk management methodology, volatility can trigger panic and permanent capital impairment.",
                   "Understanding how to calculate and manage portfolio risk allows sophisticated investors to thrive during turbulent market conditions."
@@ -2412,7 +2412,7 @@
                 "readTime": "6 Min Read",
                 "image": "/blog5.png",
                 "imageAlt": "Proactive Tax Strategies to Maximize Investment Returns",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "It is not what your portfolio earns that determines your future wealth; it is what you retain after taxes. Tax friction is one of the single biggest compound drags on long-term investment performance.",
                   "Proactive, year-round tax planning ensures you utilize every statutory advantage to keep more of your returns compounding in your accounts."
@@ -2512,7 +2512,7 @@
                 "readTime": "5 Min Read",
                 "image": "/blog.png",
                 "imageAlt": "Building a Bulletproof Retirement Income Plan",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "introduction": [
                   "Transitioning from accumulating wealth during your working years to decumulating during retirement is the most vulnerable phase of financial life.",
                   "Without a structured withdrawal strategy, sequence-of-returns risk and inflation can permanently deplete your nest egg prematurely. Here is how to build a retirement income stream that lasts a lifetime."
@@ -3672,7 +3672,7 @@
                 "titleHighlight": "a Brighter Tomorrow",
                 "image": "/overview.png",
                 "imageAlt": "Wealth Management",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Our wealth management services are designed to help you achieve your financial goals through personalized strategies, expert guidance, and a long-term approach. We take the time to understand your unique needs and create tailored solutions that grow, protect, and preserve your wealth across every stage of life.",
                   "Whether you are planning for retirement, funding your children's education, or building a legacy, our experienced advisors are here to simplify complex financial decisions and give you confidence in your financial future."
@@ -3780,7 +3780,7 @@
                 "titleHighlight": "Financial Freedom",
                 "image": "/service2.png",
                 "imageAlt": "Retirement Planning",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Planning for retirement is about creating financial independence so you can enjoy your golden years with total peace of mind. Our retirement advisory combines accurate longevity forecasting, inflation-hedged income strategies, and disciplined asset structuring.",
                   "We help you build a reliable corpus that generates consistent monthly income, protects against health contingencies, and ensures you never outlive your accumulated wealth."
@@ -3888,7 +3888,7 @@
                 "titleHighlight": "Lifelong Financial Clarity",
                 "image": "/service3.png",
                 "imageAlt": "Financial Planning",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "True financial success requires more than picking good investments; it requires an integrated strategy connecting every aspect of your financial life. Our holistic financial planning brings structure to cash flows, debt, emergency reserves, and aspirational milestones.",
                   "We craft customized roadmaps that adapt as your career accelerates, family expands, and priorities evolveÃ¢â‚¬â€giving you clarity, confidence, and control."
@@ -3996,7 +3996,7 @@
                 "titleHighlight": "Superior Investment Returns",
                 "image": "/service.png",
                 "imageAlt": "Investment Advisory",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "In complex and fast-moving financial markets, emotional decision-making is the biggest threat to long-term returns. Our investment advisory delivers institutional-grade research, disciplined market screening, and proactive asset management.",
                   "We construct diversified portfolios tailored to your specific return hurdles and risk tolerance, identifying market dislocations and capturing alpha while safeguarding principal."
@@ -4104,7 +4104,7 @@
                 "titleHighlight": "Unforeseen Life Disruptions",
                 "image": "/service4.png",
                 "imageAlt": "Risk Management",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Wealth creation without rigorous risk mitigation is vulnerable to sudden setbacks. Our comprehensive risk management service identifies hidden liabilities, market risks, and insurance gaps before they can threaten your financial security.",
                   "We construct impenetrable defensive frameworks combining high-coverage insurance policies, asset protection trusts, and capital preservation strategies tailored to your wealth profile."
@@ -4212,7 +4212,7 @@
                 "titleHighlight": "Higher Capital Retention",
                 "image": "/service5.png",
                 "imageAlt": "Tax Planning",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Taxes represent one of the largest drags on investment performance and wealth accumulation. Our proactive tax planning services structure your investments, income streams, and capital distributions to legally minimize tax obligations.",
                   "We operate year-roundÃ¢â‚¬â€not just at filing seasonÃ¢â‚¬â€identifying deduction opportunities, tax-loss harvesting, and entity optimization that compound your after-tax wealth."
@@ -4320,7 +4320,7 @@
                 "titleHighlight": "Generational Wealth Transfer",
                 "image": "/service6.png",
                 "imageAlt": "Estate Planning",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Preserving what you have built across a lifetime and ensuring it smoothly transitions to your loved ones requires thoughtful, proactive estate planning. Without a clear plan, wealth transfer can trigger severe taxes, probate disputes, and family discord.",
                   "We help you establish watertight trusts, wills, powers of attorney, and governance charters that honor your values and protect your beneficiaries for generations to come."
@@ -4428,7 +4428,7 @@
                 "titleHighlight": "Enterprise Acceleration",
                 "image": "/service1.png",
                 "imageAlt": "Business Financial Advisory",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Scaling a resilient, highly profitable business demands executive-level financial intelligence. Our business financial advisory acts as your strategic fractional CFO, offering high-level insight into cash flow, working capital, and capital allocation.",
                   "From preparing financial models for growth equity to navigating mergers, acquisitions, and restructuring, we empower leadership teams with clarity and decisiveness."
@@ -4536,7 +4536,7 @@
                 "titleHighlight": "International Market Growth",
                 "image": "/service.png",
                 "imageAlt": "Global Opportunities",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Limiting investments to domestic markets exposes portfolios to concentrated single-country risk. Our global opportunities service opens direct pathways into premier international markets, global tech leaders, and emerging market funds.",
                   "We guide you through cross-border currency hedging, international compliance, and foreign tax treaties, unlocking superior global risk-adjusted alpha."
@@ -4644,7 +4644,7 @@
                 "titleHighlight": "Higher Capital Retention",
                 "image": "/service5.png",
                 "imageAlt": "Tax Planning",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Taxes represent one of the largest drags on investment performance and wealth accumulation. Our proactive tax planning services structure your investments, income streams, and capital distributions to legally minimize tax obligations.",
                   "We operate year-roundÃ¢â‚¬â€not just at filing seasonÃ¢â‚¬â€identifying deduction opportunities, tax-loss harvesting, and entity optimization that compound your after-tax wealth."
@@ -4752,7 +4752,7 @@
                 "titleHighlight": "Enterprise Acceleration",
                 "image": "/service1.png",
                 "imageAlt": "Business Financial Advisory",
-                "heroImage": "/banner.png",
+                "heroImage": "/banner.jpg",
                 "overviewParagraphs": [
                   "Scaling a resilient, highly profitable business demands executive-level financial intelligence. Our business financial advisory acts as your strategic fractional CFO, offering high-level insight into cash flow, working capital, and capital allocation.",
                   "From preparing financial models for growth equity to navigating mergers, acquisitions, and restructuring, we empower leadership teams with clarity and decisiveness."

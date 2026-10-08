@@ -127,7 +127,7 @@ const Hero = ({ page, title: customTitle, image: customImage, parent: customPare
   }
 
   const title = customTitle || data?.title || "Service Detail";
-  const image = customImage || data?.image || "/banner.png";
+  const image = customImage || data?.image || "/banner.jpg";
   const parent = customParent || data?.parent;
 
   return (

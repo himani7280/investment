@@ -53,7 +53,7 @@ export default async function ServiceDetailPage({
       <Hero
         page="serviceDetail"
         title={service.title}
-        image="/banner.png"
+        image="/banner.jpg"
       />
       <Overview data={service} />
     </div>

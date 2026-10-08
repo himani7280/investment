@@ -51,7 +51,7 @@ export default async function TeamDetailPage({
       <Hero
         page="ourTeam"
         title={member.name}
-        image="/banner.png"
+        image="/banner.jpg"
         parent={{ label: "Our Team", href: "/ourTeam" }}
       />
       <AboutMarry data={member} />
