@@ -17,7 +17,7 @@ export default function ThankYouPage() {
       {/* Note: We pass page="thankyou" so the Hero component reads the correct title & image from Context/JSON */}
       <Hero page="thankyou" />
       
-      <section className="flex-grow flex items-center justify-center px-4 py-12 md:p-8 md:mt-12 md:mb-12">
+      <section className="flex-grow flex items-center justify-center px-4 py-12 md:p-8 md:mt-8 md:mb-8">
         <div className="text-center p-6 md:p-10 bg-white bg-opacity-80 rounded-xl shadow-lg backdrop-blur-md max-w-2xl mx-auto border border-gray-100">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6">{content.title}</h2>
           <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
