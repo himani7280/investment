@@ -48,15 +48,6 @@ export default function NotFound() {
             {content.homeButtonText}
           </Link>
 
-          {/* <Link
-            href={content.servicesHref}
-            className="group inline-flex items-center gap-2 text-sm font-semibold text-[#0070f3] hover:text-blue-700 transition-colors"
-          >
-            {content.servicesPrompt}
-            <span className="group-hover:translate-x-1 transition-transform duration-200">
-              &rarr;
-            </span>
-          </Link> */}
         </div>
       </div>
     </div>

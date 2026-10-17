@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -56,7 +56,7 @@ const staggerContainer = {
 
 const ServiceSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white pt-10 sm:pt-12 lg:pt-14">
+    <section className="relative w-full overflow-hidden bg-white pt-6 sm:pt-8 lg:pt-10">
       {/* Top Right Decorative Shape */}
       <div
         className="
@@ -70,7 +70,7 @@ const ServiceSection = () => {
       />
 
       {/* Main Container */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-8 md:px-10 lg:px-12 xl:px-14">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-8 xl:gap-10">
           {/* LEFT IMAGE WITH MOTION */}
           <motion.div
@@ -120,7 +120,7 @@ const ServiceSection = () => {
           >
             {/* Label Badge */}
             <motion.div variants={fadeIn}>
-              <span className="inline-flex rounded-full border border-[#d4e3f7] bg-white px-3.5 py-1 text-[10px] font-semibold uppercase tracking-[0.1em] text-[#2d6fc4] sm:text-[11px]">
+              <span className="inline-flex rounded-full border border-[#d4e3f7] bg-white px-4 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#2d6fc4] sm:text-[12px]">
                 {content.badge}
               </span>
             </motion.div>
@@ -128,7 +128,7 @@ const ServiceSection = () => {
             {/* Heading */}
             <motion.h2
               variants={fadeIn}
-              className="mt-3 max-w-[750px] text-[26px] font-bold leading-[1.12] tracking-[-1px] text-[#07152f] sm:text-[32px] md:text-[36px] lg:text-[38px] xl:text-[40px]"
+              className="mt-3 max-w-[750px] text-[28px] font-bold leading-tight tracking-tight text-[#07152f] sm:text-[34px] lg:text-[38px]"
             >
               <span className="whitespace-pre-line">{content.titleStart}</span>{" "}
               <span className="text-[#1264d4]">{content.titleHighlight}</span>
@@ -137,7 +137,7 @@ const ServiceSection = () => {
             {/* Description */}
             <motion.p
               variants={fadeIn}
-              className="mt-3 max-w-[700px] text-[12px] leading-[1.65] text-[#53647d] sm:text-[13px] lg:text-[14px]"
+              className="mt-3 max-w-[700px] text-[14px] leading-relaxed text-[#53647d] sm:text-[15px]"
             >
               {content.description}
             </motion.p>

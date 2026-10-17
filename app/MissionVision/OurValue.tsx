@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
@@ -23,7 +23,7 @@ const OurValue: React.FC = () => {
   return (
     <section className="w-full bg-white">
       {/* MAIN CONTAINER */}
-      <div className="mx-auto w-full max-w-[1180px] px-2 pt-10 sm:px-12 sm:pt-12 md:px-12 lg:px-2 lg:pt-14">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 sm:pt-12 lg:pt-14">
         
         {/* ================= HEADER ================= */}
         <div className="mb-[18px] text-center sm:mb-[22px] lg:mb-[16px]">
@@ -124,12 +124,12 @@ const OurValue: React.FC = () => {
                   const alignment = index === 1 ? "justify-center border-r border-[#D9E2F0] px-[6px] sm:px-[10px]" : index === 2 ? "justify-end pl-[6px] sm:pl-[10px]" : "border-r border-[#D9E2F0] pr-[6px] sm:pr-[10px]";
 
                   return (
-                    /* Har specific feature item ka apna individual group wrapper hai */
+                  
                     <div 
                       key={feature.label} 
                       className={`group/item cursor-pointer flex items-center gap-[8px] ${alignment} sm:gap-[12px]`}
                     >
-                      {/* Sirf is text/feature par hover karne se iska icon bg blue and text highlight hoga */}
+                      
                       <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-[#E5F0FF] text-[#1468E8] transition-all duration-300 group-hover/item:bg-[#1468E8] group-hover/item:text-white group-hover/item:scale-110 sm:h-[40px] sm:w-[40px]">
                         <Icon className="h-[19px] w-[19px] transition-transform duration-300 sm:h-[20px] sm:w-[20px]" />
                       </div>
@@ -193,12 +193,12 @@ const OurValue: React.FC = () => {
                   const alignment = index === 1 ? "justify-center border-r border-[#D9E2F0] px-[6px] sm:px-[10px]" : index === 2 ? "justify-end pl-[6px] sm:pl-[10px]" : "border-r border-[#D9E2F0] pr-[6px] sm:pr-[10px]";
 
                   return (
-                    /* Har specific feature item ka apna individual group wrapper hai */
+                    
                     <div 
                       key={feature.label} 
                       className={`group/item cursor-pointer flex items-center gap-[8px] ${alignment} sm:gap-[12px]`}
                     >
-                      {/* Sirf is text/feature par hover karne se iska icon bg blue and text highlight hoga */}
+                      
                       <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-[#E5F0FF] text-[#1468E8] transition-all duration-300 group-hover/item:bg-[#1468E8] group-hover/item:text-white group-hover/item:scale-110 sm:h-[40px] sm:w-[40px]">
                         <Icon className="h-[19px] w-[19px] transition-transform duration-300 sm:h-[20px] sm:w-[20px]" />
                       </div>

@@ -7,7 +7,7 @@ export default function InitialLoader() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timeoutId = window.setTimeout(() => setIsLoading(false), 250);
+    const timeoutId = window.setTimeout(() => setIsLoading(false), 300);
     return () => window.clearTimeout(timeoutId);
   }, []);
 
@@ -15,14 +15,21 @@ export default function InitialLoader() {
     <AnimatePresence>
       {isLoading && (
         <motion.main
-          initial={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="fixed inset-0 z-100 flex min-h-screen items-center justify-center bg-white"
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="fixed inset-0 z-100 flex min-h-screen items-center justify-center bg-white/95 backdrop-blur-sm"
           aria-label="Loading"
           role="status"
         >
-          <div className="flex flex-col items-center gap-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.3 }}
+            className="flex flex-col items-center gap-4"
+          >
             <div className="relative h-14 w-14">
               <div className="absolute inset-0 rounded-full border-4 border-[#dceaff]" />
               <motion.div
@@ -31,10 +38,14 @@ export default function InitialLoader() {
                 className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#2d6fc4]"
               />
             </div>
-            <span className="text-xs font-semibold tracking-[0.22em] text-[#2d6fc4]">
+            <motion.span
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="text-xs font-semibold tracking-[0.22em] text-[#2d6fc4]"
+            >
               LOADING
-            </span>
-          </div>
+            </motion.span>
+          </motion.div>
         </motion.main>
       )}
     </AnimatePresence>

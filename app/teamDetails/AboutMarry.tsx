@@ -85,12 +85,12 @@ const AnimatedMetricCounter = ({
     if (!isInView) return
 
     let animationFrame: number
-    const duration = 1200 // 1.2 Seconds
+    const duration = 1200 
     const start = performance.now()
 
     const updateValue = (timestamp: number) => {
       const progress = Math.min((timestamp - start) / duration, 1)
-      const eased = 1 - Math.pow(1 - progress, 3) // Smooth ease-out effect
+      const eased = 1 - Math.pow(1 - progress, 3) 
       const current = Math.max(1, Math.round(1 + (target - 1) * eased))
 
       setCount(current)
@@ -148,7 +148,7 @@ export default function AboutMarry({ data }: AboutMarryProps) {
   }
 
   return (
-    <section className="mx-auto w-full max-w-7xl bg-white px-4 font-sans antialiased text-slate-800 sm:px-5 lg:px-12 pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
+    <section className="mx-auto w-full max-w-[1440px] bg-white px-4 sm:px-6 lg:px-8 xl:px-10 font-sans antialiased text-slate-800 pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
       {/* ==================== SECTION 1: TOP HERO ROW ==================== */}
       <motion.div
         initial="hidden"
@@ -248,26 +248,7 @@ export default function AboutMarry({ data }: AboutMarryProps) {
 
         {/* Right Column: Share Profile & Let's Connect Card */}
         <motion.div variants={rightColVariants} className="flex h-full min-w-0 flex-col justify-between pt-1 md:col-span-2 lg:col-span-3">
-          {/* Share Profile Social Icons */}
-          {/* <div className="pt-2">
-            <h3 className="text-xs font-bold text-[#0B1E48] uppercase tracking-wider mb-3">
-              {data.shareTitle}
-            </h3>
-            <div className="mt-3 flex flex-wrap items-center gap-3 sm:mt-4">
-              <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} aria-label={data.socials[0]} className="group flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 shadow-sm transition-all hover:border-blue-600 hover:bg-blue-600">
-                <LinkedinIcon />
-              </motion.button>
-              <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} aria-label={data.socials[1]} className="group flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 shadow-sm transition-all hover:border-blue-600 hover:bg-blue-600">
-                <FacebookIcon />
-              </motion.button>
-              <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} aria-label={data.socials[2]} className="group flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 shadow-sm transition-all hover:border-blue-600 hover:bg-blue-600">
-                <TwitterXIcon />
-              </motion.button>
-              <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} onClick={handleCopyLink} aria-label={data.copyLinkLabel} className="group flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 shadow-sm transition-all hover:border-blue-600 hover:bg-blue-600">
-                {copied ? <Check className="h-5 w-5 text-green-600" /> : <LinkIcon className="h-5 w-5 text-[#0B1E48] transition-colors group-hover:text-white" />}
-              </motion.button>
-            </div>
-          </div> */}
+
 
           {/* Let's Connect Card */}
           <div className="bg-[#F5F8FF] border border-blue-100 rounded-2xl p-6 mt-6 lg:mt-0 flex flex-col justify-between">
@@ -378,7 +359,7 @@ export default function AboutMarry({ data }: AboutMarryProps) {
         {/* Column 2: Quote Box */}
         <motion.div variants={itemVariants} className="md:col-span-1 lg:col-span-4 bg-[#F5F8FF] border border-blue-100 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
           <div>
-            <div className="text-blue-600 text-5xl font-serif font-bold leading-none mb-3">“</div>
+            <div className="text-blue-600 text-5xl font-roboto font-bold leading-none mb-3">“</div>
             <p className="text-base sm:text-lg font-bold text-[#0B1E48] leading-snug mb-8">
               {data.quote}
             </p>

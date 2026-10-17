@@ -153,7 +153,7 @@ const processSteps = investmentContent.investmentProcess.steps.map(
   (step, index) => ({ ...step, icon: processStepIcons[index].icon })
 );
 
-// Explicitly typing Framer Motion Variants resolves TypeScript easing errors
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -193,7 +193,7 @@ const lineVariants: Variants = {
 const OurProcess = () => {
   return (
     <section className="w-full bg-white pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* ================= HEADING ================= */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -205,21 +205,21 @@ const OurProcess = () => {
           <div className="mb-3 flex items-center justify-center gap-4">
             <span className="h-[2px] w-14 bg-[#5b9df9] sm:w-18" />
 
-            <span className="text-sm font-semibold tracking-wide text-[#6382ae]">
+            <span className="text-[11px] font-semibold tracking-wider text-[#6382ae] uppercase sm:text-[12px]">
               {investmentContent.investmentProcess.badge}
             </span>
 
             <span className="h-[2px] w-14 bg-[#5b9df9] sm:w-18" />
           </div>
 
-          <h2 className="text-3xl font-bold leading-tight text-[#102e65] sm:text-4xl lg:text-[42px]">
+          <h2 className="text-[28px] font-bold leading-tight tracking-tight text-[#102e65] sm:text-[34px] lg:text-[38px]">
             {investmentContent.investmentProcess.titleStart}{" "}
             <span className="text-[#1769e0]">
               {investmentContent.investmentProcess.titleHighlight}
             </span>
           </h2>
 
-          <p className="mx-auto mt-2 max-w-3xl text-sm leading-6 text-[#61799e] sm:text-base sm:leading-7">
+          <p className="mx-auto mt-2 max-w-3xl text-[14px] leading-relaxed text-[#61799e] sm:text-[15px]">
             {investmentContent.investmentProcess.description}
           </p>
         </motion.div>

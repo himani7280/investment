@@ -41,7 +41,7 @@ const containerVariants = {
 
 const OurTeam: React.FC = () => {
   return (
-    <section className="mx-auto w-full max-w-7xl bg-white px-4 sm:px-10 lg:px-12 pt-8 sm:pt-10 lg:pt-12">
+    <section className="mx-auto w-full max-w-[1440px] bg-white px-4 sm:px-6 lg:px-8 xl:px-10 pt-8 sm:pt-10 lg:pt-12">
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}
@@ -52,12 +52,12 @@ const OurTeam: React.FC = () => {
       >
         <div className="inline-flex items-center gap-2 mb-2">
           <span className="w-8 h-[2px] bg-[#2563eb]"></span>
-          <span className="text-xs sm:text-sm font-semibold tracking-wider text-[#1e3a8a] uppercase">
+          <span className="text-[11px] font-semibold tracking-wider text-[#1e3a8a] uppercase sm:text-[12px]">
             {content.badge}
           </span>
           <span className="w-8 h-[2px] bg-[#2563eb]"></span>
         </div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1E48] tracking-tight mb-3">
+        <h2 className="text-[28px] font-bold leading-tight tracking-tight text-[#0B1E48] sm:text-[34px] lg:text-[38px] mb-3">
           {content.titleStart} <span className="text-[#2563eb]">{content.titleHighlight}</span>
         </h2>
         <p className="text-[#64748b] text-sm sm:text-base max-w-xl mx-auto font-normal">

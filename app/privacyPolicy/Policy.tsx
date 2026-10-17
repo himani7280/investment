@@ -53,7 +53,7 @@ const listItemVariants: Variants = {
 const Policy = () => {
   return (
     <section className="w-full bg-white pt-8 md:pt-16 mb-3 overflow-hidden">
-      <div className="mx-auto max-w-[1000px] px-4 sm:px-6 lg:px-4">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         
         {/* Header */}
         <motion.div

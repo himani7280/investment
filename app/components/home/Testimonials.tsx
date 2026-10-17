@@ -32,7 +32,8 @@ const Testimonials = () => {
 
   return (
     <section className="relative w-full overflow-hidden bg-white pt-4 sm:pt-6 lg:pt-12">
-      <div className="grid min-h-[500px] w-full grid-cols-1 lg:grid-cols-[45%_55%]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
+        <div className="grid min-h-[500px] w-full grid-cols-1 overflow-hidden rounded-2xl border border-[#e8f0fe] shadow-sm lg:grid-cols-[45%_55%]">
         
         {/* Left Side: Main Image & Floating Quote Badge */}
         <motion.div
@@ -145,31 +146,12 @@ const Testimonials = () => {
             >
               <div className="flex items-center gap-3">
                 <span className="h-[2px] w-[47px] bg-[#438af0]" />
-                <span
-                  className="
-                    text-[9px]
-                    font-semibold
-                    tracking-[1.8px]
-                    text-[#438af0]
-                    sm:text-[10px]
-                  "
-                >
+                <span className="text-[11px] font-semibold tracking-wider text-[#438af0] uppercase sm:text-[12px]">
                   {content.badge}
                 </span>
               </div>
 
-              <h2
-                className="
-                  mt-4
-                  text-[38px]
-                  font-bold
-                  leading-[1.02]
-                  tracking-[-1.5px]
-                  text-[#071b43]
-                  sm:text-[46px]
-                  lg:text-[52px]
-                "
-              >
+              <h2 className="mt-4 text-[28px] font-bold leading-tight tracking-tight text-[#071b43] sm:text-[34px] lg:text-[38px]">
                 {content.titleStart}
                 <br />
                 <span className="text-[#126ce4]">
@@ -365,7 +347,7 @@ const Testimonials = () => {
                   onClick={() => setCurrent(index)}
                   className="relative flex cursor-pointer items-center justify-center"
                 >
-                  {/* Click kiye gaye avatar ke paas vertical blue line slide karke aayegi */}
+                
                   {isActive && (
                     <motion.span
                       layoutId="activeVerticalIndicator"
@@ -443,7 +425,7 @@ const Testimonials = () => {
             <span className="h-[2px] w-[45px] bg-[#2776df]" />
           </div>
         </div>
-
+      </div>
       </div>
     </section>
   );

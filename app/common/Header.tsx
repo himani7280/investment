@@ -28,10 +28,10 @@ const Header = () => {
           max-w-[1440px]
           items-center
           justify-between
-          px-2
-          sm:px-4
-          md:px-6
+          px-4
+          sm:px-6
           lg:px-8
+          xl:px-10
         "
       >
         {/* Left - Tagline */}

@@ -46,7 +46,7 @@ const staggerContainer = {
 const BlogsSection = () => {
   return (
     <section className="w-full bg-white pt-2 sm:pt-10 lg:pt-14">
-      <div className="mx-auto max-w-[1200px] px-2 sm:px-6 md:px-8 lg:px-2  ">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -57,18 +57,18 @@ const BlogsSection = () => {
         >
           <div className="mb-3 flex items-center justify-center gap-3">
             <span className="h-[2px] w-9 bg-blue-600 sm:w-10"></span>
-            <span className="text-[10px] font-bold tracking-[1.5px] text-blue-600 uppercase sm:text-[11px]">
+            <span className="text-[11px] font-semibold tracking-wider text-blue-600 uppercase sm:text-[12px]">
               {content.badge}
             </span>
             <span className="h-[2px] w-9 bg-blue-600 sm:w-10"></span>
           </div>
 
-          <h2 className="mx-auto max-w-[900px] text-[26px] font-bold leading-[1.15] text-[#0b2454] sm:text-[32px] md:text-[36px] lg:text-[38px]">
+          <h2 className="mx-auto max-w-[900px] text-[28px] font-bold leading-tight tracking-tight text-[#0b2454] sm:text-[34px] lg:text-[38px]">
             {content.titleStart}{" "}
             <span className="text-blue-600">{content.titleHighlight}</span>
           </h2>
 
-          <p className="mx-auto mt-2.5 max-w-[650px] text-[13px] leading-[1.6] text-slate-600 sm:text-[14px]">
+          <p className="mx-auto mt-2.5 max-w-[650px] text-[14px] leading-relaxed text-slate-600 sm:text-[15px]">
             {content.description}
           </p>
         </motion.div>

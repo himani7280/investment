@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Hero from '../components/Hero'
 
 const SitemapPage = () => {
@@ -28,7 +28,7 @@ const SitemapPage = () => {
   return (
     <div>
       <Hero page="sitemap" />
-      <div className="max-w-4xl mx-auto p-6">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10 py-8">
         <h2 className="text-2xl font-bold mt-8 mb-4">Site Map</h2>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 list-disc list-inside">
           {links.map((link) => (

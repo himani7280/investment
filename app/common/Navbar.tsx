@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-[37px] z-50 w-full max-w-full overflow-x-clip border-t border-[#2d6fc4] bg-white shadow-sm">
-      <nav className="mx-auto w-full max-w-[1440px] px-2 sm:px-6 md:px-4 lg:px-6">
+      <nav className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
         {/* ================= DESKTOP NAVBAR ================= */}
         <div className="hidden h-[80px] w-full items-center justify-between lg:flex">

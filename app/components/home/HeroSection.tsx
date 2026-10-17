@@ -71,7 +71,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ data }) => {
         />
       </div>
 
-      <div className="section-container relative z-20 flex min-h-[440px] flex-col justify-between pt-4 pb-0 sm:pb-0 md:pb-4 lg:min-h-[480px] lg:pt-0 lg:pb-8">
+      <div className="relative z-20 mx-auto flex min-h-[440px] w-full max-w-[1440px] flex-col justify-between px-4 pt-4 pb-0 sm:px-6 sm:pb-0 md:pb-4 lg:min-h-[480px] lg:px-8 lg:pt-0 lg:pb-8 xl:px-10">
         <motion.div
           variants={staggerContainer}
           initial="hidden"

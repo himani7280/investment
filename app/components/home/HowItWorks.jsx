@@ -40,7 +40,7 @@ const staggerContainer = {
 const HowItWorks = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white  pt-10 sm:pt-12  lg:pt-[41px]">
-      <div className="mx-auto w-full max-w-[1280px] px-2 sm:px-4 lg:px-0">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* ================= HEADER ================= */}
         <motion.div
           initial={{ opacity: 0, y: 18 }}
@@ -50,19 +50,19 @@ const HowItWorks = () => {
           className="mx-auto max-w-[800px] text-center"
         >
           {/* Badge */}
-          <div className="inline-flex rounded-full border border-[#d8e7fa] bg-[#f7fbff] px-5 py-[7px] text-[11px] font-medium uppercase tracking-[0.15em] text-[#1f5fd0] sm:text-[12px] lg:text-[13px]">
+          <div className="inline-flex rounded-full border border-[#d8e7fa] bg-[#f7fbff] px-4 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#1f5fd0] sm:text-[12px]">
             {content.badge}
           </div>
 
           {/* Title */}
-          <h2 className="mt-[16px] text-[26px] font-semibold leading-[0.97] tracking-[-0.02em] text-[#071b43] sm:text-[30px] md:text-[36px] lg:text-[clamp(26px,3.3vw,44px)]">
+          <h2 className="mt-[16px] text-[28px] font-bold leading-tight tracking-tight text-[#071b43] sm:text-[34px] lg:text-[38px]">
             {content.titleStart}
             <br className="hidden sm:block" />
             <span className="text-[#1f64dc]"> {content.titleHighlight}</span>
           </h2>
 
           {/* Description */}
-          <p className="mx-auto mt-[20px] max-w-[720px] text-[12px] leading-[1.5] text-[#5f6e84] sm:text-[13px] lg:text-[clamp(12px,1.05vw,14.5px)]">
+          <p className="mx-auto mt-[16px] max-w-[720px] text-[14px] leading-relaxed text-[#5f6e84] sm:text-[15px]">
             {content.description}
           </p>
         </motion.div>

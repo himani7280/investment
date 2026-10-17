@@ -26,25 +26,24 @@ const formatDisplayValue = (value: number, raw: string) => {
 
 const AnimatedCounter = ({ value }: { value: string }) => {
   const ref = useRef<HTMLSpanElement>(null);
-  // once: true ka matlab hai animation sirf EK BAAR hi chalega
+  
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   const [count, setCount] = useState(1);
   const hasAnimated = useRef(false);
 
   useEffect(() => {
-    // Agar viewport me nahi aya ya animation pehle ho chuka hai toh execution rok dein
     if (!isInView || hasAnimated.current) return;
 
-    hasAnimated.current = true; // Mark as animated
+    hasAnimated.current = true;
 
     const target = Number(value.replace(/[^\d]/g, "")) || 1;
     let animationFrame = 0;
-    const duration = 1200; // 1.2 seconds
+    const duration = 1200; 
     const start = performance.now();
 
     const updateValue = (timestamp: number) => {
       const progress = Math.min((timestamp - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3); // Smooth ease-out effect
+      const eased = 1 - Math.pow(1 - progress, 3); 
       const current = Math.max(1, Math.round(1 + (target - 1) * eased));
       
       setCount(current);
@@ -103,7 +102,7 @@ const Trusted = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-[#031d46]/90 via-[#073670]/85 to-[#031d46]/90" />
 
       {/* Content Container */}
-      <div className="relative z-10 mx-auto w-full max-w-[1280px] px-4 sm:px-8 lg:px-12">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -114,18 +113,18 @@ const Trusted = () => {
         >
           <div className="flex items-center justify-center gap-3">
             <span className="h-[1px] w-[36px] bg-white/70" />
-            <span className="text-[9px] font-semibold tracking-[3px] text-white uppercase sm:text-[10px] sm:tracking-[3.5px]">
+            <span className="text-[11px] font-semibold tracking-wider text-white uppercase sm:text-[12px]">
               {content.badge}
             </span>
             <span className="h-[1px] w-[36px] bg-white/70" />
           </div>
 
-          <h2 className="mt-3 text-[24px] font-bold leading-[1.12] tracking-[-0.6px] text-white sm:text-[30px] md:text-[34px] lg:text-[38px]">
+          <h2 className="mt-3 text-[28px] font-bold leading-tight tracking-tight text-white sm:text-[34px] lg:text-[38px]">
             {content.titleStart}{" "}
             <span className="text-[#4c9df5]">{content.titleHighlight}</span>
           </h2>
 
-          <p className="mx-auto mt-2 max-w-[620px] text-[11px] leading-[1.55] text-white/80 sm:text-[12px] lg:text-[13px]">
+          <p className="mx-auto mt-2 max-w-[620px] text-[14px] leading-relaxed text-white/80 sm:text-[15px]">
             {content.description}
           </p>
         </motion.div>
@@ -158,7 +157,7 @@ const Trusted = () => {
                   <Icon size={24} strokeWidth={1.8} className="text-white" />
                 </div>
 
-                {/* Number (Pehli baar scroll karne par animate hoga, baad me same rahega) */}
+              
                 <h3 className="mt-3 text-[26px] font-bold leading-none tracking-[-0.8px] text-white sm:text-[32px] lg:text-[36px]">
                   <AnimatedCounter value={stat.number} />
                 </h3>

@@ -14,7 +14,7 @@ export default function ThankYouPage() {
         <meta name="description" content={content.description} />
       </Head>
       
-      {/* Note: We pass page="thankyou" so the Hero component reads the correct title & image from Context/JSON */}
+    
       <Hero page="thankyou" />
       
       <section className="flex-grow flex items-center justify-center px-4 py-12 md:p-8 md:mt-8 md:mb-8">

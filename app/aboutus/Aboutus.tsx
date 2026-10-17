@@ -43,8 +43,7 @@ const Aboutus = () => {
 
   return (
     <section className="relative w-full overflow-hidden bg-transparent pt-10 sm:pt-12 lg:pt-10">
-      {/* Mobile/Small Screen pe px-2, tablet pe sm:px-8, desktop pe lg:px-12 */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-2 sm:px-8 lg:px-12">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid grid-cols-1 items-center gap-6 sm:gap-8 lg:grid-cols-[46%_54%] lg:gap-6 xl:gap-8">
           
           {/* ================= IMAGE SIDE ================= */}

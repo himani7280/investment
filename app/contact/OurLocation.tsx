@@ -49,8 +49,8 @@ const cardVariants: Variants = {
 
 const OurLocation = () => {
   return (
-    <section className="w-full bg-white px-4 pt-10 sm:px-6 md:px-8 lg:px-10 xl:px-12 overflow-hidden">
-      <div className="mx-auto w-full max-w-[1200px]">
+    <section className="w-full bg-white pt-10 overflow-hidden">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
         {/* Header Section */}
         <motion.div

@@ -90,7 +90,7 @@ const Review = () => {
       ? baseReviews
       : [...baseReviews, ...baseReviews, ...baseReviews, ...baseReviews];
 
-  // Number of unique columns (each column contains 2 stacked cards)
+  // Number of unique columns 
   const totalColumns = Math.max(3, Math.floor(extendedReviews.length / 2));
 
   // Base columns set
@@ -99,10 +99,10 @@ const Review = () => {
     extendedReviews[(colIdx * 2 + 1) % extendedReviews.length],
   ]);
 
-  // Infinite Seamless Set: [Clone Set 1, Active Set, Clone Set 2]
+  // Infinite Seamless Set:
   const displayColumns = [...baseCols, ...baseCols, ...baseCols];
 
-  // Start at the middle set (offset index = totalColumns)
+  // Start at the middle set
   const [currentIndex, setCurrentIndex] = useState(totalColumns);
   const [isAnimating, setIsAnimating] = useState(true);
 
@@ -135,18 +135,18 @@ const Review = () => {
       {/* Background Decoration */}
       <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-blue-50/50 blur-3xl" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* ================= HEADER ================= */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-12">
           <div className="mb-3 flex items-center justify-center gap-3 sm:mb-4 sm:gap-4">
             <div className="h-[2px] w-10 bg-blue-600 sm:w-12" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 sm:text-sm">
+            <span className="text-[11px] font-semibold tracking-wider text-gray-500 uppercase sm:text-[12px]">
               {content.badge}
             </span>
             <div className="h-[2px] w-10 bg-blue-600 sm:w-12" />
           </div>
 
-          <h2 className="mb-3 text-3xl font-extrabold tracking-tight text-gray-900 sm:mb-4 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-3 text-[28px] font-bold leading-tight tracking-tight text-gray-900 sm:mb-4 sm:text-[34px] lg:text-[38px]">
             {content.titleStart}{" "}
             <span className="text-blue-600">{content.titleHighlight}</span>
           </h2>

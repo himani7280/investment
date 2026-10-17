@@ -62,8 +62,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="w-full bg-white px-4 pt-8 sm:px-10 lg:px-12 overflow-hidden">
-      <div className="mx-auto w-full max-w-[1200px]">
+    <section className="w-full bg-white pt-8 sm:pt-10 lg:pt-12 overflow-hidden">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid grid-cols-1 overflow-hidden rounded-xl bg-[#f8fbff] lg:grid-cols-[1.25fr_0.85fr] shadow-sm border border-[#e6f0fa]">
           
           {/* Form Left Column */}
@@ -321,9 +321,7 @@ const ContactForm = () => {
                       </React.Fragment>
                     ))}
                   </p>
-                  {/* <p className="mt-1 text-sm text-[#71809d]">
-                    {content.officeHours}
-                  </p> */}
+                 
                 </div>
               </motion.div>
 

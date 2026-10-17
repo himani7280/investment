@@ -28,7 +28,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.25, 0.1, 0.25, 1] as const, // Fixed TypeScript error
+      ease: [0.25, 0.1, 0.25, 1] as const, 
     },
   },
 };
@@ -49,7 +49,7 @@ const Achievements = () => {
 
   return (
     <section className="w-full overflow-hidden bg-white pt-10 sm:pt-12 lg:pt-8">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-12">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
         {/* ================= TOP AREA ================= */}
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-10">

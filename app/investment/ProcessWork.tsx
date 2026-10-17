@@ -19,13 +19,13 @@ const CountUp = ({ target, prefix = "", suffix = "" }: CountUpProps) => {
   useEffect(() => {
     if (!isInView) return;
 
-    const duration = 1800; // 1.8 seconds animation duration
+    const duration = 1800;
     const startTime = performance.now();
     let frameId: number;
 
     const updateCount = (now: number) => {
       const progress = Math.min((now - startTime) / duration, 1);
-      const easedProgress = 1 - Math.pow(1 - progress, 3); // Smooth ease-out effect
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
       setCount(Math.max(1, Math.round(1 + (target - 1) * easedProgress)));
 
       if (progress < 1) {
@@ -46,7 +46,7 @@ const CountUp = ({ target, prefix = "", suffix = "" }: CountUpProps) => {
   );
 };
 
-// Motion Variants (as const add kar ke TypeScript build error fix kiya gaya h)
+// Motion Variants 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -65,7 +65,7 @@ const itemVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.25, 0.1, 0.25, 1] as const, // <-- 'as const' added here
+      ease: [0.25, 0.1, 0.25, 1] as const, 
     },
   },
 };
@@ -75,7 +75,7 @@ const ProcessWork = () => {
 
   return (
     <section className="w-full bg-white pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-10 lg:px-12">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-7">
 

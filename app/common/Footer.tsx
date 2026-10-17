@@ -65,7 +65,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white font-sans text-[#52637e] overflow-hidden">
       {/* ================= Main Footer ================= */}
-      <div className="mx-auto w-full max-w-[1440px] px-4 pt-10 sm:pt-12 lg:pt-14 sm:px-10 pb-10 sm:pb-12 lg:pb-14">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 sm:pt-12 lg:pt-14 pb-10 sm:pb-12 lg:pb-14">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -256,7 +256,7 @@ const Footer = () => {
         variants={bottomBarVariants}
         className="bg-[#021838] py-3 text-white"
       >
-        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center justify-between gap-3 px-3 text-center sm:px-10 lg:flex-row lg:text-left">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center justify-between gap-3 px-4 sm:px-6 lg:px-8 xl:px-10 text-center lg:flex-row lg:text-left">
           <p className="text-[13px] text-slate-300">
             {content.copyright}
           </p>

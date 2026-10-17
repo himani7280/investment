@@ -8,7 +8,7 @@ interface MotionRevealProps extends Pick<MotionProps, "transition" | "viewport">
   className?: string;
   delay?: number;
   distance?: number;
-  direction?: "up" | "left" | "right";
+  direction?: "up" | "left" | "right" | "down" | "fade" | "none";
 }
 
 export default function MotionReveal({
@@ -20,11 +20,24 @@ export default function MotionReveal({
   transition,
   viewport,
 }: MotionRevealProps) {
-  const offset = {
-    up: { y: distance, x: 0 },
-    left: { y: 0, x: -distance },
-    right: { y: 0, x: distance },
-  }[direction];
+  const getOffset = () => {
+    switch (direction) {
+      case "up":
+        return { y: distance, x: 0 };
+      case "down":
+        return { y: -distance, x: 0 };
+      case "left":
+        return { y: 0, x: -distance };
+      case "right":
+        return { y: 0, x: distance };
+      case "fade":
+      case "none":
+      default:
+        return { y: 0, x: 0 };
+    }
+  };
+
+  const offset = getOffset();
 
   return (
     <motion.div

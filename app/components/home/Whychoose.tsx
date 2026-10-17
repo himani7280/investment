@@ -34,25 +34,25 @@ const staggerContainer = {
   },
 };
 
-// Component jo string se numbers dhoond kar unhe 1 se animate karega (Only ONCE)
+
 const InlineCounterText = ({ text }: { text: string }) => {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
   const [displayCount, setDisplayCount] = useState(1);
   const hasAnimated = useRef(false);
 
-  // String me se pehle digits ko extract kar rahe hain (e.g. "500+ Happy Clients" -> target 500)
+  
   const match = text.match(/\d+/);
   const targetNumber = match ? parseInt(match[0], 10) : null;
 
   useEffect(() => {
-    // Agar element view me nahi aaya, number missing hai, ya ANIMATION PEHLE HO CHUKA HAI toh exit karein
+    
     if (!isInView || !targetNumber || hasAnimated.current) return;
 
-    hasAnimated.current = true; // Mark as animated so it never runs again
+    hasAnimated.current = true; 
 
     let start = 1;
-    const duration = 2000; // 2 seconds animation duration
+    const duration = 2000; 
     const totalSteps = 60;
     const stepTime = Math.max(Math.floor(duration / totalSteps), 16);
     const increment = (targetNumber - start) / (duration / stepTime);
@@ -72,7 +72,7 @@ const InlineCounterText = ({ text }: { text: string }) => {
 
   if (!targetNumber) return <>{text}</>;
 
-  // String ko split karke animated number ke saath replace kar rahe hain
+  
   const parts = text.split(match![0]);
 
   return (
@@ -93,7 +93,7 @@ const Whychoose = () => {
       <div className="absolute left-[48%] top-[-150px] h-[300px] w-[300px] rounded-full bg-[#082b5d] opacity-60" />
       <div className="absolute left-[45%] bottom-[-130px] h-[280px] w-[280px] rounded-full bg-[#062957] opacity-70" />
 
-      <div className="relative z-10 mx-auto flex max-w-[1440px] items-center px-4 sm:px-10 lg:px-10 xl:px-12">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1440px] items-center px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid w-full items-center gap-8 lg:grid-cols-[45%_55%] lg:gap-6 xl:gap-8">
           {/* LEFT CONTENT */}
           <motion.div
@@ -109,7 +109,7 @@ const Whychoose = () => {
                 <span className="block h-0 w-0 border-b-[7px] border-l-[12px] border-t-[7px] border-b-transparent border-l-[#38a8ff] border-t-transparent" />
                 <span className="-ml-[4px] block h-0 w-0 border-b-[7px] border-l-[12px] border-t-[7px] border-b-transparent border-l-[#7268ff] border-t-transparent" />
               </div>
-              <span className="text-[10px] font-semibold tracking-[1.5px] text-white/80 uppercase">
+              <span className="text-[11px] font-semibold tracking-wider text-white/90 uppercase sm:text-[12px]">
                 {content.badge}
               </span>
               <span className="ml-1 h-[2px] w-[52px] bg-white/70" />
@@ -118,7 +118,7 @@ const Whychoose = () => {
             {/* Main Heading */}
             <motion.h2
               variants={fadeIn}
-              className="mt-4 max-w-[500px] text-[30px] font-bold leading-[1.08] tracking-[-1.2px] text-white sm:text-[38px] lg:text-[44px] xl:text-[48px]"
+              className="mt-4 max-w-[500px] text-[28px] font-bold leading-tight tracking-tight text-white sm:text-[34px] lg:text-[38px]"
             >
               {content.titleLines[0]}
               <br />
@@ -130,12 +130,12 @@ const Whychoose = () => {
             {/* Description */}
             <motion.p
               variants={fadeIn}
-              className="mt-3.5 max-w-[470px] text-[12px] leading-[1.6] text-white/75 sm:text-[13px] lg:text-[14px]"
+              className="mt-3.5 max-w-[470px] text-[14px] leading-relaxed text-white/80 sm:text-[15px]"
             >
               {content.description}
             </motion.p>
 
-            {/* Trusted Clients (Ek baar animated counter run hoga) */}
+          
             <motion.div
               variants={fadeIn}
               className="mt-6 flex items-center lg:mt-7"

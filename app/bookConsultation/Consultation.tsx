@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -85,7 +85,7 @@ const stepItemVariants: Variants = {
 const Consultation = () => {
   return (
     <section className="w-full bg-[#f8fbff] pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
-      <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         
         {/* ================= SECTION 1: FORM & RIGHT CARD ================= */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">

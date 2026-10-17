@@ -60,7 +60,7 @@ const cardVariants = {
 const ServiceGoal = () => {
   return (
     <section className="w-full bg-white pt-10 sm:pt-12 lg:pt-14">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Animated Header Section */}
         <motion.div
           initial="hidden"

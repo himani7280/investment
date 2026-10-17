@@ -43,7 +43,7 @@ const Faq = () => {
 
   return (
     <section className="relative w-full overflow-hidden bg-white pt-10 sm:pt-12 lg:pt-14">
-      <div className="mx-auto w-full max-w-7xl px-8 sm:px-10 lg:px-12">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
         {/* ================= HEADER ================= */}
         <motion.div

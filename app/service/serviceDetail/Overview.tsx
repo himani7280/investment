@@ -1,6 +1,6 @@
 'use client'
 
-import React from "react";
+
 import {
   UserRound,
   TrendingUp,
@@ -98,7 +98,7 @@ const Overview = ({ data }: OverviewProps) => {
 
   return (
     <section className="w-full bg-white overflow-hidden">
-      <div className="mx-auto max-w-[1200px] px-3 pt-10 sm:pt-12 lg:px-4 lg:pt-14">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 sm:pt-12 lg:pt-14">
         <div className="grid grid-cols-1 gap-7 xl:grid-cols-[minmax(0,1fr)_315px]">
           <div>
             {/* HERO / OVERVIEW SECTION */}

@@ -1,11 +1,15 @@
 import React from 'react'
 import Hero from "../components/Hero";
 import Review from './Review';
+import FadeIn from '../common/components/FadeIn';
+
 const page = () => {
   return (
-    <div>
-        <Hero page="testimonials"/>
-        <Review/>
+    <div className="overflow-x-clip">
+      <Hero page="testimonials" />
+      <FadeIn direction="up" delay={0.1}>
+        <Review />
+      </FadeIn>
     </div>
   )
 }

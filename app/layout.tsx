@@ -1,25 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Poppins } from "next/font/google";
+import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "./common/Header";
 import Navbar from "./common/Navbar";
 import Footer from "./common/Footer";
 import HeroProvide from "./context/HeroProvide";
 import { investmentContent } from "./data/investmentContent";
+import InitialLoader from "./common/components/InitialLoader";
 // import BackgroundAnimation from "./common/components/BackgroundAnimation";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+  variable: "--font-roboto",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -31,9 +32,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${poppins.variable} ${roboto.variable} h-full antialiased`}
     >
-       <body className={`min-h-full flex flex-col ${poppins.className}`}>
+      <body className={`min-h-full flex flex-col font-sans ${poppins.className}`}>
+        <InitialLoader />
         {/* <BackgroundAnimation /> */}
         <HeroProvide>
           <Header />
