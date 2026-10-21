@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-poppins), Poppins, sans-serif;
+  --font-poppins: var(--font-poppins), Poppins, sans-serif;
+  --font-roboto: var(--font-roboto), Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-poppins), Poppins, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-title {
+    font-family: var(--font-roboto), Roboto, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
