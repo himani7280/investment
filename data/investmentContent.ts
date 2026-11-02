@@ -2,7 +2,10 @@ import data from "./investment.json";
 
 const sections = data.Investment.sections;
 
-export const investmentTemplate = {};
+export const investmentFonts = data.Investment.fonts;
+export const investmentTemplate = data.Investment.templateComponents;
+
+
 
 export const investmentContent = {
   heroes: {

@@ -9,7 +9,7 @@ import {
   Handshake,
 } from "lucide-react";
 import { motion, useInView } from "framer-motion";
-import { investmentContent } from "../../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.trusted;
 const statIcons = { Users, FileText, Trophy, Handshake };

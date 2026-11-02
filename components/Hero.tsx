@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 import {
   HeroContext,
   type HeroPage,
-} from "../context/HeroProvide";
+} from "@/app/context/HeroProvide";
 
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 interface HeroProps {
   page?: HeroPage;

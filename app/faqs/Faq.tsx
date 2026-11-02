@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.faq;
 const faqsData = content.faqs;
@@ -45,7 +45,6 @@ const Faq = () => {
     <section className="relative w-full overflow-hidden bg-white pt-10 sm:pt-12 lg:pt-14">
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
-        {/* ================= HEADER ================= */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -85,10 +84,8 @@ const Faq = () => {
           </p>
         </motion.div>
 
-        {/* ================= MAIN GRID ================= */}
         <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-12 lg:gap-10">
 
-          {/* ================= LEFT: FAQ ================= */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -201,7 +198,6 @@ const Faq = () => {
             })}
           </motion.div>
 
-          {/* ================= RIGHT COLUMN ================= */}
           <motion.div
             initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -210,7 +206,6 @@ const Faq = () => {
             className="flex flex-col gap-6 lg:col-span-4"
           >
 
-            {/* ================= CONTACT CARD ================= */}
             <div className="rounded-2xl bg-blue-50/50 p-5 sm:p-7">
               <h3 className="mb-2 text-xl font-extrabold text-gray-900 sm:text-2xl">
                 {content.contact.titleStart}{" "}
@@ -346,7 +341,6 @@ const Faq = () => {
               </motion.div>
             </div>
 
-            {/* ================= PROMO IMAGE CARD ================= */}
             <motion.div
               whileHover={{ scale: 1.01 }}
               transition={{ duration: 0.3 }}

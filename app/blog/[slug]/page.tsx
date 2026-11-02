@@ -1,13 +1,13 @@
 
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import Hero from "../../components/Hero";
+import Hero from "@/components/Hero";
 import BlogContent from "../BlogDetail/BlogContent";
 import {
   getBlogBySlug,
   getAllBlogSlugs,
   investmentContent,
-} from "../../data/investmentContent";
+} from "@/data/investmentContent";
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();

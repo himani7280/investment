@@ -15,7 +15,7 @@ import {
   Handshake,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { investmentContent } from "../../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.services;
 const serviceIcons = {

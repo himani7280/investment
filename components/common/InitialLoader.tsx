@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { investmentContent } from "@/app/data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 export default function InitialLoader() {
   const [isLoading, setIsLoading] = useState(true);

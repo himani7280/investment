@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { investmentContent, type ServiceDetailData } from "../../data/investmentContent";
+import { investmentContent, type ServiceDetailData } from "@/data/investmentContent";
 
 const benefitIcons = {
   UserRound,

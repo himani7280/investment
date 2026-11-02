@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const processStepIcons = [
   {
@@ -194,7 +194,6 @@ const OurProcess = () => {
   return (
     <section className="w-full bg-white pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
-        {/* ================= HEADING ================= */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -224,7 +223,6 @@ const OurProcess = () => {
           </p>
         </motion.div>
 
-        {/* ================= PROCESS STEPS ================= */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -238,7 +236,6 @@ const OurProcess = () => {
               variants={itemVariants}
               className="relative flex min-w-0 flex-col items-center px-1 text-center group"
             >
-              {/* ================= ICON ================= */}
               <div className="relative mb-4 sm:mb-5">
                 {/* NUMBER BADGE */}
                 <motion.div
@@ -304,17 +301,14 @@ const OurProcess = () => {
                 </motion.div>
               </div>
 
-              {/* ================= TITLE ================= */}
               <h3 className="mb-1 text-lg font-bold text-[#102e65] sm:mb-2 sm:text-xl transition-colors duration-200 group-hover:text-[#1769e0]">
                 {step.title}
               </h3>
 
-              {/* ================= DESCRIPTION ================= */}
               <p className="max-w-[190px] text-xs leading-4 text-[#60789e] sm:text-sm sm:leading-5">
                 {step.description}
               </p>
 
-              {/* ================= ARROW / CONNECTOR ================= */}
               {index < processSteps.length - 1 && (
                 <div
                   className="

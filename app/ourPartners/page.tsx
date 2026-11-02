@@ -1,7 +1,7 @@
 
-import Hero from "../components/Hero";
-import OurPartners from '@/app/components/home/OurPartners';
-import FadeIn from '../common/components/FadeIn';
+import Hero from "@/components/Hero";
+import OurPartners from '@/components/home/OurPartners';
+import FadeIn from '@/components/common/FadeIn';
 
 const page = () => {
   return (

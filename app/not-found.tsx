@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { investmentContent } from './data/investmentContent';
+import { investmentContent } from '@/data/investmentContent';
 
 const content = investmentContent.siteChrome.notFound;
 

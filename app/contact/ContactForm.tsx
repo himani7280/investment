@@ -13,7 +13,7 @@ import {
   Headphones,
 } from "lucide-react";
 import { motion, Variants } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.contactForm;
 
@@ -259,9 +259,6 @@ const ContactForm = () => {
                   >
                     {content.phone}
                   </a>
-                  {/* <p className="mt-1 text-sm text-[#71809d]">
-                    {content.callHours}
-                  </p> */}
                 </div>
               </motion.div>
 

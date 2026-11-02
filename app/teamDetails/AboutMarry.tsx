@@ -18,7 +18,7 @@ import {
   GraduationCap,
   Check,
 } from 'lucide-react'
-import { type TeamMemberData } from '../data/investmentContent'
+import { type TeamMemberData } from '@/data/investmentContent'
 
 const expertiseIcons = { Users, Settings, TrendingUp, Award };
 
@@ -149,7 +149,6 @@ export default function AboutMarry({ data }: AboutMarryProps) {
 
   return (
     <section className="mx-auto w-full max-w-[1440px] bg-white px-4 sm:px-6 lg:px-8 xl:px-10 font-sans antialiased text-slate-800 pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
-      {/* ==================== SECTION 1: TOP HERO ROW ==================== */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -274,7 +273,6 @@ export default function AboutMarry({ data }: AboutMarryProps) {
         </motion.div>
       </motion.div>
 
-      {/* ==================== SECTION 2: MIDDLE ROW (ABOUT & SKILLS) ==================== */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -321,7 +319,6 @@ export default function AboutMarry({ data }: AboutMarryProps) {
         </motion.div>
       </motion.div>
 
-      {/* ==================== SECTION 3: BOTTOM ROW (EXPERTISE, QUOTE & EXPERIENCE) ==================== */}
       <motion.div
         initial="hidden"
         whileInView="visible"

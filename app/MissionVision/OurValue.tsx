@@ -13,7 +13,7 @@ import {
   BarChart2,
   Star,
 } from "lucide-react";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.missionVision;
 const missionIcons = { Users, Gem, Shield };
@@ -25,7 +25,6 @@ const OurValue: React.FC = () => {
       {/* MAIN CONTAINER */}
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 sm:pt-12 lg:pt-14">
         
-        {/* ================= HEADER ================= */}
         <div className="mb-[18px] text-center sm:mb-[22px] lg:mb-[16px]">
           
           {/* OUR VALUES */}
@@ -52,7 +51,6 @@ const OurValue: React.FC = () => {
           </p>
         </div>
 
-        {/* ================= CONTENT ================= */}
         <div className="space-y-[12px]">
 
           {/* =====================================================

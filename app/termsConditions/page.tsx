@@ -1,6 +1,6 @@
 
 import Policy from '../privacyPolicy/Policy'
-import Hero from '../components/Hero'
+import Hero from '@/components/Hero'
 
 const TermsPage = () => {
   return (

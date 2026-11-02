@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 interface ReviewType {
   id: number;
@@ -136,7 +136,6 @@ const Review = () => {
       <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-blue-50/50 blur-3xl" />
 
       <div className="relative mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
-        {/* ================= HEADER ================= */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-12">
           <div className="mb-3 flex items-center justify-center gap-3 sm:mb-4 sm:gap-4">
             <div className="h-[2px] w-10 bg-blue-600 sm:w-12" />
@@ -156,7 +155,6 @@ const Review = () => {
           </p>
         </div>
 
-        {/* ================= INFINITE 1-COLUMN SMOOTH SCROLL CAROUSEL ================= */}
         <div className="relative overflow-hidden">
           <div
             onTransitionEnd={handleTransitionEnd}
@@ -186,7 +184,6 @@ const Review = () => {
           </div>
         </div>
 
-        {/* ================= CONTROLS ================= */}
         <div className="mt-6 flex items-center justify-center gap-3 sm:mt-8 sm:gap-4">
           {/* Left Arrow */}
           <button

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { investmentContent } from "../../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.partners;
 const partners = content.items;

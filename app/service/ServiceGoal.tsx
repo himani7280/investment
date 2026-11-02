@@ -13,7 +13,7 @@ import {
   Users,
   UsersRound,
 } from "lucide-react";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.services.servicePage;
 const serviceIcons = {

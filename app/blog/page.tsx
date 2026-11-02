@@ -1,7 +1,7 @@
 
-import Hero from '../components/Hero'
+import Hero from '@/components/Hero'
 import LatestBlog from './LatestBlog'
-import FadeIn from '../common/components/FadeIn'
+import FadeIn from '@/components/common/FadeIn'
 
 const page = () => {
   return (

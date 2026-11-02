@@ -1,10 +1,10 @@
 import React from 'react'
 import Aboutus from './Aboutus'
-import Trusted from '../components/home/Trusted'
-import HowItWorks from '../components/home/HowItWorks'
-import OurPartners from '../components/home/OurPartners'
-import Hero from '../components/Hero'
-import FadeIn from '../common/components/FadeIn'
+import Trusted from '@/components/home/Trusted'
+import HowItWorks from '@/components/home/HowItWorks'
+import OurPartners from '@/components/home/OurPartners'
+import Hero from '@/components/Hero'
+import FadeIn from '@/components/common/FadeIn'
 
 const page = () => {
   return (

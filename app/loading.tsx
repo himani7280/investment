@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { investmentContent } from "@/app/data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 export default function Loading() {
   return (

@@ -1,8 +1,8 @@
 
 import type { Metadata } from 'next';
 import Policy from './Policy';
-import Hero from '../components/Hero';
-import { investmentContent } from '../data/investmentContent';
+import Hero from '@/components/Hero';
+import { investmentContent } from '@/data/investmentContent';
 
 export const metadata: Metadata = {
   title: `${investmentContent.privacyPolicy.badge} | ${investmentContent.siteChrome.brandName}`,

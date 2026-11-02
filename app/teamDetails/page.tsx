@@ -1,8 +1,8 @@
 
 import { notFound } from "next/navigation";
 import AboutMarry from "./AboutMarry";
-import Hero from "../components/Hero";
-import { getTeamBySlug } from "../data/investmentContent";
+import Hero from "@/components/Hero";
+import { getTeamBySlug } from "@/data/investmentContent";
 
 const Page = () => {
   const data = getTeamBySlug("mary-merrill");

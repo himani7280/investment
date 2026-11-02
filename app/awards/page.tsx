@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from "../components/Hero";
+import Hero from "@/components/Hero";
 import Achievements from './Achievements';
-import FadeIn from '../common/components/FadeIn';
+import FadeIn from '@/components/common/FadeIn';
 
 const page = () => {
   return (

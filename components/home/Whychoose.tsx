@@ -10,7 +10,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { motion, useInView } from "framer-motion";
-import { investmentContent } from "../../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.whyChooseUs;
 

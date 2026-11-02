@@ -1,8 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Hero from '../components/Hero';
-import { investmentContent } from '../data/investmentContent';
+import Hero from '@/components/Hero';
+import { investmentContent } from '@/data/investmentContent';
 
 export const metadata: Metadata = {
   title: `${investmentContent.thankYouPage.title} | ${investmentContent.siteChrome.brandName}`,

@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { investmentContent } from "../../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.howItWorks;
 const steps = content.steps;
@@ -41,7 +41,6 @@ const HowItWorks = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white  pt-10 sm:pt-12  lg:pt-[41px]">
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
-        {/* ================= HEADER ================= */}
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +66,6 @@ const HowItWorks = () => {
           </p>
         </motion.div>
 
-        {/* ================= STEPS ================= */}
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -77,7 +75,6 @@ const HowItWorks = () => {
         >
           {steps.map((step, index) => (
             <Fragment key={step.number}>
-              {/* ================= SINGLE STEP ================= */}
               <motion.div
                 variants={fadeIn}
                 whileHover={{
@@ -124,7 +121,6 @@ const HowItWorks = () => {
                 <div className="mx-auto mt-[14px] h-[2px] w-[40px] bg-[#1f64dc] transition-all duration-300 group-hover:w-[55px]" />
               </motion.div>
 
-              {/* ================= CONNECTOR ================= */}
               {index < steps.length - 1 && (
                 <div
                   className="pointer-events-none absolute z-[5] hidden lg:block"

@@ -1,7 +1,7 @@
 
 import OurTeam from "./OurTeam"
-import Hero from '@/app/components/Hero'
-import FadeIn from '../common/components/FadeIn'
+import Hero from '@/components/Hero'
+import FadeIn from '@/components/common/FadeIn'
 
 const page = () => {
   return (

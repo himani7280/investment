@@ -6,7 +6,7 @@ import { IoCall } from "react-icons/io5";
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { BiLogoYoutube } from "react-icons/bi";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.siteChrome.header;
 const socialIcons = {

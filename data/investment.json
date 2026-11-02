@@ -1,5 +1,334 @@
 {
   "Investment": {
+    "fonts": {
+      "stylesheet": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap",
+      "variables": {
+        "--font-poppins": "'Poppins', sans-serif",
+        "--font-roboto": "'Roboto', sans-serif"
+      }
+    },
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Header": "InvestmentSiteChrome1",
+          "Footer": "InvestmentSiteChrome1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentHomeHero1"
+              },
+              {
+                "key": "About",
+                "component": "InvestmentAbout1"
+              },
+              {
+                "key": "Services",
+                "component": "InvestmentServices1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "InvestmentWhyChooseUs1"
+              },
+              {
+                "key": "HowItWorks",
+                "component": "InvestmentHowItWorks1"
+              },
+              {
+                "key": "Trusted",
+                "component": "InvestmentTrusted1"
+              },
+              {
+                "key": "Partners",
+                "component": "InvestmentPartners1"
+              },
+              {
+                "key": "Testimonials",
+                "component": "InvestmentTestimonials1"
+              },
+              {
+                "key": "Blog",
+                "component": "InvestmentBlog1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentAboutHero1"
+              },
+              {
+                "key": "AboutPage",
+                "component": "InvestmentAboutPage1"
+              },
+              {
+                "key": "Trusted",
+                "component": "InvestmentTrusted1"
+              },
+              {
+                "key": "HowItWorks",
+                "component": "InvestmentHowItWorks1"
+              },
+              {
+                "key": "Partners",
+                "component": "InvestmentPartners1"
+              }
+            ]
+          },
+          "missionVision": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentMissionVisionHero1"
+              },
+              {
+                "key": "MissionVision",
+                "component": "InvestmentMissionVision1"
+              }
+            ]
+          },
+          "whyChooseUs": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentWhyChooseUsHero1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "InvestmentWhyChooseUs1"
+              },
+              {
+                "key": "HowItWorks",
+                "component": "InvestmentHowItWorks1"
+              }
+            ]
+          },
+          "investment": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentProcessHero1"
+              },
+              {
+                "key": "InvestmentProcess",
+                "component": "InvestmentProcess1"
+              },
+              {
+                "key": "ProcessWork",
+                "component": "InvestmentProcessWork1"
+              }
+            ]
+          },
+          "service": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentServicesHero1"
+              },
+              {
+                "key": "Services",
+                "component": "InvestmentServices1"
+              }
+            ]
+          },
+          "serviceDetail": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentServiceDetailHero1"
+              },
+              {
+                "key": "ServiceDetail",
+                "component": "InvestmentServiceDetail1"
+              }
+            ]
+          },
+          "ourTeam": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentOurTeamHero1"
+              },
+              {
+                "key": "Team",
+                "component": "InvestmentTeam1"
+              }
+            ]
+          },
+          "teamDetails": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentTeamDetailsHero1"
+              },
+              {
+                "key": "TeamProfile",
+                "component": "InvestmentTeamProfile1"
+              }
+            ]
+          },
+          "ourPartners": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentPartnersHero1"
+              },
+              {
+                "key": "Partners",
+                "component": "InvestmentPartners1"
+              }
+            ]
+          },
+          "testimonials": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentTestimonialsHero1"
+              },
+              {
+                "key": "Reviews",
+                "component": "InvestmentReviews1"
+              }
+            ]
+          },
+          "awards": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentAwardsHero1"
+              },
+              {
+                "key": "Awards",
+                "component": "InvestmentAwards1"
+              }
+            ]
+          },
+          "faqs": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentFaqHero1"
+              },
+              {
+                "key": "Faq",
+                "component": "InvestmentFaq1"
+              }
+            ]
+          },
+          "blog": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentBlogHero1"
+              },
+              {
+                "key": "BlogPage",
+                "component": "InvestmentBlogPage1"
+              }
+            ]
+          },
+          "blogDetail": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentBlogDetailHero1"
+              },
+              {
+                "key": "BlogDetail",
+                "component": "InvestmentBlogDetail1"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentContactHero1"
+              },
+              {
+                "key": "ContactForm",
+                "component": "InvestmentContactForm1"
+              },
+              {
+                "key": "ContactLocation",
+                "component": "InvestmentLocation1"
+              }
+            ]
+          },
+          "bookConsultation": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentConsultationHero1"
+              },
+              {
+                "key": "Consultation",
+                "component": "InvestmentConsultation1"
+              }
+            ]
+          },
+          "privacyPolicy": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentPrivacyHero1"
+              },
+              {
+                "key": "PrivacyPolicy",
+                "component": "InvestmentPrivacyPolicy1"
+              }
+            ]
+          },
+          "disclaimer": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentDisclaimerHero1"
+              },
+              {
+                "key": "PrivacyPolicy",
+                "component": "InvestmentPrivacyPolicy1"
+              }
+            ]
+          },
+          "termsConditions": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentTermsHero1"
+              },
+              {
+                "key": "PrivacyPolicy",
+                "component": "InvestmentPrivacyPolicy1"
+              }
+            ]
+          },
+          "sitemap": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentSitemapHero1"
+              }
+            ]
+          },
+          "thankYou": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InvestmentThankYouHero1"
+              },
+              {
+                "key": "ThankYou",
+                "component": "InvestmentThankYou1"
+              }
+            ]
+          }
+        }
+      }
+    },
     "sections": {
       "Hero": {
         "variants": {

@@ -15,7 +15,7 @@ import {
   FaClock,
 } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 // Animation Variants
 const footerContainerVariants: Variants = {
@@ -64,7 +64,6 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-white font-sans text-[#52637e] overflow-hidden">
-      {/* ================= Main Footer ================= */}
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 sm:pt-12 lg:pt-14 pb-10 sm:pb-12 lg:pb-14">
         <motion.div
           initial="hidden"
@@ -74,7 +73,6 @@ const Footer = () => {
           className="grid grid-cols-1 items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.9fr_1fr_1.1fr] lg:gap-8"
         >
           
-          {/* ================= Column 1: Logo & Info ================= */}
           <motion.div variants={columnVariants} className="flex h-full flex-col justify-between pr-0 lg:pr-2">
             <div>
               {/* Logo */}
@@ -123,7 +121,6 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* ================= Column 2: Quick Links ================= */}
           <motion.div variants={columnVariants} className="flex h-full flex-col border-l-0 border-[#edf2f7] lg:border-l lg:pl-8">
             <h3 className="mb-2 text-[18px] font-bold text-[#021838]">
               {content.quickLinksTitle}
@@ -154,7 +151,6 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* ================= Column 3: Our Services ================= */}
           <motion.div variants={columnVariants} className="flex h-full flex-col border-l-0 border-[#edf2f7] lg:border-l lg:pl-8">
             <h3 className="mb-2 text-[18px] font-bold text-[#021838]">
               {content.servicesTitle}
@@ -185,7 +181,6 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* ================= Column 4: Contact Us ================= */}
           <motion.div variants={columnVariants} className="flex h-full flex-col border-l-0 border-[#edf2f7] lg:border-l lg:pl-8">
             <h3 className="mb-2 text-[18px] font-bold text-[#021838]">
               {content.contactTitle}
@@ -240,7 +235,6 @@ const Footer = () => {
         </motion.div>
       </div>
 
-      {/* ================= Bottom Bar ================= */}
       <motion.div
         initial="hidden"
         whileInView="visible"

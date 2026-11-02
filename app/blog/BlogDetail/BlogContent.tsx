@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CalendarDays, Clock3, FolderOpen, UserRound } from "lucide-react";
 import { motion, Variants } from "framer-motion";
-import type { BlogDetailData } from "../../data/investmentContent";
+import type { BlogDetailData } from "@/data/investmentContent";
 
 // ─── Animation Variants ───────────────────────────────────────────────────────
 

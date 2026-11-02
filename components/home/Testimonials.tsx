@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
-import { investmentContent } from "../../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.testimonials;
 const testimonials = content.items.map((item) => ({

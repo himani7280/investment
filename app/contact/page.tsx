@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import Hero from '@/components/Hero'
 import ContactForm from './ContactForm'
 import OurLocation from './OurLocation'
-import FadeIn from '../common/components/FadeIn'
+import FadeIn from '@/components/common/FadeIn'
 
 const page = () => {
   return (

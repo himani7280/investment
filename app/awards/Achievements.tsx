@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Award, Heart, Users, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.awards;
 const featureIcons = [Award, Heart, Users, ShieldCheck];
@@ -51,7 +51,6 @@ const Achievements = () => {
     <section className="w-full overflow-hidden bg-white pt-10 sm:pt-12 lg:pt-8">
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
-        {/* ================= TOP AREA ================= */}
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-10">
 
           {/* LEFT CONTENT */}
@@ -126,7 +125,6 @@ const Achievements = () => {
           </motion.div>
         </div>
 
-        {/* ================= AWARDS HEADING & CATEGORIES ================= */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -182,7 +180,6 @@ const Achievements = () => {
           </div>
         </motion.div>
 
-        {/* ================= AWARDS GRID ================= */}
         <motion.div
           layout
           className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"

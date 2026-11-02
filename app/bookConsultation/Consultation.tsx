@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const content = investmentContent.consultation;
 const stepIcons = { Calendar, MessageSquare, UserCheck, BarChart2 };
@@ -87,7 +87,6 @@ const Consultation = () => {
     <section className="w-full bg-[#f8fbff] pt-10 sm:pt-12 lg:pt-14 overflow-hidden">
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         
-        {/* ================= SECTION 1: FORM & RIGHT CARD ================= */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
           
           {/* LEFT: FORM CONTAINER */}
@@ -333,7 +332,6 @@ const Consultation = () => {
 
         </div>
 
-        {/* ================= SECTION 2: WHAT TO EXPECT ================= */}
         <motion.div
           initial="hidden"
           whileInView="visible"

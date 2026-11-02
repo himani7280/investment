@@ -3,7 +3,7 @@
 
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion, Variants } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 interface PolicySection {
   id: string;

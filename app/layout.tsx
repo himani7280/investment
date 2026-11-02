@@ -1,42 +1,34 @@
 import type { Metadata } from "next";
-import { Poppins, Roboto } from "next/font/google";
+import type { CSSProperties } from "react";
 import "./globals.css";
-import Header from "./common/Header";
-import Navbar from "./common/Navbar";
-import Footer from "./common/Footer";
+import Header from "@/components/common/Header";
+import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
 import HeroProvide from "./context/HeroProvide";
-import { investmentContent } from "./data/investmentContent";
-import InitialLoader from "./common/components/InitialLoader";
+import { investmentContent, investmentFonts as fonts } from "@/data/investmentContent";
+import InitialLoader from "@/components/common/InitialLoader";
 
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
-  display: "swap",
-});
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-  variable: "--font-roboto",
-  display: "swap",
-});
+const { metadata: siteMetadata } = investmentContent.siteChrome;
 
 export const metadata: Metadata = {
-  title: investmentContent.siteChrome.metadata.title,
-  description: investmentContent.siteChrome.metadata.description,
+  title: siteMetadata.title,
+  description: siteMetadata.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${roboto.variable} h-full antialiased`}
+      className="h-full antialiased"
+      style={fonts.variables as CSSProperties}
     >
-      <body className={`min-h-full flex flex-col font-sans ${poppins.className}`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href={fonts.stylesheet} />
+      </head>
+      <body className="min-h-full flex flex-col font-sans">
         <InitialLoader />
-        {/* <BackgroundAnimation /> */}
         <HeroProvide>
           <Header />
           <Navbar />

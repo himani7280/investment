@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, ReactNode } from "react";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 export interface ParentBreadcrumb {
   label: string;

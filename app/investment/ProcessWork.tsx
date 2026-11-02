@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion, useInView, Variants } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 type CountUpProps = {
   target: number;
@@ -79,7 +79,6 @@ const ProcessWork = () => {
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-7">
 
-          {/* ================= LEFT IMAGE BLOCK ================= */}
           <motion.div
             initial={{ opacity: 0, x: -35 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -115,7 +114,6 @@ const ProcessWork = () => {
             </motion.div>
           </motion.div>
 
-          {/* ================= RIGHT CONTENT BLOCK ================= */}
           <motion.div
             initial={{ opacity: 0, x: 35 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -266,7 +264,6 @@ const ProcessWork = () => {
           </motion.div>
         </div>
 
-        {/* ================= STATS SECTION ================= */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

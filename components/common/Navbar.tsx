@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, ArrowRight, Menu, X } from "lucide-react";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -39,7 +39,6 @@ const Navbar = () => {
     <header className="fixed top-[37px] z-50 w-full max-w-full overflow-x-clip border-t border-[#2d6fc4] bg-white shadow-sm">
       <nav className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
 
-        {/* ================= DESKTOP NAVBAR ================= */}
         <div className="hidden h-[80px] w-full items-center justify-between lg:flex">
           {/* LOGO */}
           <Link href={homeItem.href} className="shrink-0">
@@ -182,7 +181,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* ================= MOBILE HEADER ================= */}
         <div className="flex h-[66px] w-full items-center justify-between lg:hidden">
           <Link href={homeItem.href} onClick={closeMobileMenu} className="shrink-0">
             <Image
@@ -205,7 +203,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* ================= MOBILE MENU ================= */}
         {mobileMenuOpen && (
           <div className="w-full max-w-full overflow-hidden border-t border-[#e5e7eb] bg-white pb-6 pt-2 lg:hidden">
 

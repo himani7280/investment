@@ -1,8 +1,8 @@
 import React from 'react'
 import OurProcess from './OurProcess'
 import ProcessWork from './ProcessWork'
-import Hero from '../components/Hero'
-import FadeIn from '../common/components/FadeIn'
+import Hero from '@/components/Hero'
+import FadeIn from '@/components/common/FadeIn'
 
 const page = () => {
   return (

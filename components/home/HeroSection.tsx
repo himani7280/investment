@@ -10,7 +10,7 @@ import {
   Users,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { investmentContent } from "../../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 interface HeroSectionProps {
   data?: typeof investmentContent.homeHero;

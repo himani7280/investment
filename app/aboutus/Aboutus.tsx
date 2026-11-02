@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { investmentContent } from "../data/investmentContent";
+import { investmentContent } from "@/data/investmentContent";
 
 // Motion Variants
 const imageVariants = {
@@ -46,7 +46,6 @@ const Aboutus = () => {
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid grid-cols-1 items-center gap-6 sm:gap-8 lg:grid-cols-[46%_54%] lg:gap-6 xl:gap-8">
           
-          {/* ================= IMAGE SIDE ================= */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -78,7 +77,6 @@ const Aboutus = () => {
             </div>
           </motion.div>
 
-          {/* ================= TEXT SIDE ================= */}
           <motion.div
             initial="hidden"
             whileInView="visible"
